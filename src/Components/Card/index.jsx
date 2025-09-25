@@ -8,14 +8,14 @@ export default function Cards() {
   ];
 
   return (
-    <section className="py-5 bg-light text-center">
-      <h2 className="mb-4">Why TravelGo?</h2>
+    <section className="py-5 px-4 bg-light text-center">
+      <h2 className="mb-2">Why TravelGo?</h2>
       <div className="row justify-content-center">
         {features.map((f, i) => (
-          <div key={i} className="col-md-4 mb-4">
-            <div className="card border-0 shadow-lg h-100">
+          <div key={i} className="col-md-4 ">
+            <div className="card border-1 shadow-lg h-100">
               <div className="card-body text-center">
-                <img src={f.img} alt={f.title} className="mb-3" style={{ height: "60px" }} />
+                <img src={f.img} alt={f.title} className="mb-3" style={{ height: "70px" }} />
                 <h5 className="card-title text-danger">{f.title}</h5>
                 <p className="card-text">{f.desc}</p>
               </div>

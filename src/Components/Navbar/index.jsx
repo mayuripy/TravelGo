@@ -1,4 +1,6 @@
 import React from "react";
+//import SignIn from "../../Pages/SignIn";
+import {Link} from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -9,17 +11,21 @@ export default function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto align-items-center">
+          <ul className="navbar-nav ms-auto align-items-center  ">
             <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
             <li className="nav-item"><a className="nav-link" href="/tickets">Bus Tickets</a></li>
             <li className="nav-item"><a className="nav-link" href="/offers">Offers</a></li>
             <li className="nav-item"><a className="nav-link" href="/contact">Contact</a></li>
             <li className="nav-item ms-2">
-              <button className="btn btn-danger rounded-pill">Sign In</button>
-            </li>
+          <li className="nav-item ms-2">
+            <Link to="/signin" className="btn btn-danger rounded-pill">Sign In</Link>
+          </li>
+          </li>
+
           </ul>
         </div>
       </div>
     </nav>
   );
 }
+ 
