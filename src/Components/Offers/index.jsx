@@ -81,4 +81,5 @@ export default function Offers() {
       </div>
     </section>
   );
+  
 }
